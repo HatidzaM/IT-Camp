@@ -1,0 +1,27 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.parent{
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-color: #f8c16f;
+}
+.child{
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    transition: 2s cubic-bezier(0.48,-0.23, 0, 0.62) 0.5s;
+    /* transition-property: transform;
+    transition-duration: 
+    transition-timing-function:  
+    transition-delay: ;*/
+}
+
+.parent:hover .child{
+    transform: translateX(350px) translateY(350px);
+    background-color: #48b9de;
+}
+

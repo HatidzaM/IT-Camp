@@ -1,0 +1,14 @@
+.header{
+    height: 80px;
+    background-color: lawngreen;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+
+}
+
+.djd{
+    border: lightblue solid 5px;
+    height: 130px;
+}

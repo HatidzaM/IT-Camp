@@ -1,0 +1,18 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+.main{
+    background-color: aquamarine;
+    width: 90vw;
+    /* height: 90vh; */
+    margin: auto;
+    display: flex;
+    top: 300px;
+}
+
+
+img{
+    width: 300px;
+    height: 200px;
+}

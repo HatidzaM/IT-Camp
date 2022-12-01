@@ -1,0 +1,334 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.headers{
+    background-color: blue;
+    /* width: 100%;
+    height: 60px; */
+    padding: 15px;
+    margin: 0%;
+    top: 0px;
+    display: flex;
+    /* color: white; */
+}
+.header{
+    color: white;
+    left: 50px;
+    width: 80%;
+    justify-content: center;
+}
+h1{
+    position: relative;
+    top: 15%;
+    /* align-self: center; */
+    left: 10%;
+}
+
+li{
+    display: inline;
+    padding-left: 30px;
+    position: relative;
+    left: 70%;
+    top: -18px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    /* justify-content: space-between; */
+}
+ul #buton a{
+    color: black;
+    background-color: white;
+    padding: 13px;
+    border-radius: 30px;
+    transition: .4s ease;
+}
+ul #buton a:hover{
+    background-color: rgba(55, 238, 255, 0.955);
+    /* background-color: #18fd18db;
+    border: solid 2px red; */
+}
+
+.donje{
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content: center;
+    flex-direction: column;
+}
+.cards{
+    width: 50%;
+    /* height: 100vh; moze ali ne mora*/
+    top: 80px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: black;
+}
+.card1{
+    position: absolute;
+    text-align: center;
+    left: 5%;
+    top: 120px;
+    width: 200px;
+    height: 250px;
+    background-color: rgba(196, 196, 196, 0.371);
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+p{
+    margin-top: 15px;
+    margin-inline: 5px;
+}
+h2{
+    margin-top: 15px;
+}
+
+#house{
+    margin-top: 10px;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+#cog{
+    margin-top: 10px;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+#com{
+    margin-top: 10px;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+} 
+#user{
+    margin-top: 10px;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+} 
+
+/* i{
+    font-size: 5rem;
+    color: black;
+    text-align: center;
+} */
+
+
+.card2{
+    position: absolute;
+    top: 140px;
+    width: 200px;
+    height: 250px;
+    left: 21.5%;
+    background-color: rgba(196, 196, 196, 0.371);
+    text-align: center;
+}
+.card3{
+    left: 5%;
+    position: absolute;
+    top: 390px;
+    width: 200px;
+    height: 250px;
+    background-color: rgba(196, 196, 196, 0.371);
+    text-align: center;
+    
+}
+.card4{
+    position: absolute;
+    top: 410px;
+    width: 200px;
+    height: 250px;
+    left: 21.5%;
+    background-color: rgba(196, 196, 196, 0.371);
+    text-align: center;
+}
+.slika{
+    background-image: url(https://preview.colorlib.com/theme/parason/img/home/xoffer.png.pagespeed.ic.zQ08Cd8pOt.webp);
+    width: 645px;
+    height: 579px;
+    background-repeat: no-repeat;
+    align-self: center;
+    position: relative;
+    top: 20px;
+}
+.slika_div{
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+}
+
+.foother{
+    margin-top: 30px;
+    position: static;
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: #17173f;
+    align-self: flex-end;
+    display: flex;
+}
+.krugovi{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    align-items: center;
+    display: inline-block;
+    top: 25px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+#krug1{
+    background-color: #18fd18;
+    position: relative;
+    right: -95%;
+    animation-name: kretanje1 ;
+}
+#krug2{
+    background-color: #ff0000;
+    left: 10px;
+    position: relative;
+    animation-name: kretanje2 ;
+}
+
+@keyframes kretanje1{
+    38%{background-color: #18fd18;}
+    50%{background-color: yellow;}
+    62%{background-color:#18fd18;}
+    100%{transform: translateX(-4100%);}
+}
+@keyframes kretanje2{
+    38%{background-color: #ff0000;}
+    50%{background-color: yellow;}
+    62%{background-color: #ff0000;}
+    100%{transform: translateX(4100%);}
+}
+
+
+
+@media all and (min-width:501px) and (max-width:678px){
+    /* .headers{
+        background-color: blue;
+        padding: 10px;
+        margin: 0%;
+        top: 0px;
+        display: flex;
+        width: 100vw;
+
+    } */
+    .header{
+        display: flex;
+        background-color: blue;
+        color: white;
+        left: 0px;
+        width: 100vw;
+        justify-content: center;
+    }
+    h1{
+        position: relative;
+        top: 20%;
+        left: 10%;
+    }
+    
+    li{
+        display: inline;
+        padding-left: 10%;
+        position: relative;
+        left: 70%;
+        top: -5%;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    ul #buton a{
+        color: black;
+        background-color: white;
+        padding: 5%;
+        border-radius: 30px;
+        transition: .4s ease;
+    }
+    ul #buton a:hover{
+        background-color: #37eefff4;
+    }
+
+
+    .donje{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    }
+
+    .cards{
+        width: 100vw;
+        /* height: 100vh; */
+        top: 20%;
+        /* flex-wrap: wrap; */
+        justify-content: space-around;
+        color: black;
+    }
+    .card1{
+        position: absolute;
+        text-align: center;
+        left: 5%;
+        top: 120px;
+        width: 200px;
+        height: 250px;
+        background-color: rgba(196, 196, 196, 0.371);
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+    p{
+        margin-top: 50px;
+    }
+    h2{
+        margin-top: 15px;
+    }
+    .card2{
+        position: absolute;
+        top: 140px;
+        width: 200px;
+        height: 250px;
+        left: 22%;
+        background-color: rgba(196, 196, 196, 0.371);
+        text-align: center;
+    }
+    .card3{
+        left: 5%;
+        position: absolute;
+        top: 390px;
+        width: 200px;
+        height: 250px;
+        background-color: rgba(196, 196, 196, 0.371);
+        text-align: center;
+        
+    }
+    .card4{
+        position: absolute;
+        top: 410px;
+        width: 200px;
+        height: 250px;
+        left: 22%;
+        background-color: rgba(196, 196, 196, 0.371);
+        text-align: center;
+    }
+    .slika{
+        background-image: url(https://preview.colorlib.com/theme/parason/img/home/xoffer.png.pagespeed.ic.zQ08Cd8pOt.webp);
+        width:  50%;
+        height:  60%;
+        background-repeat: no-repeat;
+        align-self: center;
+    }
+
+}
+
+
+@media all and (max-width:500px),(min-width:700px){}

@@ -1,0 +1,34 @@
+/* #image{
+    background-image: url();
+    background-size: 100% 100%;
+} */
+
+/* #editButton{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+.nekakocka{
+    background-color: hotpink;
+    width: 200px;
+    height: 150px;
+} */
+
+*{
+    background-color: ivory;
+}
+.kocka{
+    width: 400px;
+    height: 500px;
+    background-color: indianred;
+    position: relative;
+}
+
+.krug{
+    width: 200px;
+    height: 200px;
+    background-color: ivory;
+    border-radius: 50%;
+    position: absolute;
+}

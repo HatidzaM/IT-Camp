@@ -1,0 +1,70 @@
+.crni {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.beli {
+    background-color: white;
+    margin: auto;
+    margin-top: 30px;
+    height: 400px;
+    width: 400px;
+}
+
+.krugovi{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    top: -51px;
+    animation-name: padanje;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: pad;
+}
+
+@keyframes pad{
+    from{top: 0%;}
+    to{top: 80%;}
+}
+
+#krug1 {
+    background-color: blueviolet;
+    left: 22%;
+    animation-delay: 0.2s;
+}
+
+#krug2 {
+    background-color: red; 
+    animation-timing-function: linear;
+}
+
+#krug3 {
+    background-color: blue;
+    left: 35%;
+    animation-timing-function: linear;
+    animation-delay: 0.8s;
+}
+#krug4{
+    background-color: brown;
+    animation-timing-function: linear;
+    animation-delay: 0.4s;
+}
+
+#krug5{
+    background-color: green;
+    left: 1%;
+    animation-timing-function: linear;
+    animation-delay: 0.6s;
+}
+
+#krug6{
+    background-color: yellow;
+    left: 14%;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}

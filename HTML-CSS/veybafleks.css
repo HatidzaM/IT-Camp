@@ -1,0 +1,57 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main{
+    margin: auto;
+    width: 75%;
+    height: 500px;
+    background-color: rgb(93, 93, 231);
+    display: flex;
+    /* flex-direction: row; defoltna vrednost */
+    flex-direction: column;
+    /* horizontalno ce sad bit align-items: ;*/
+    align-items: center;
+    /* vertikalno poravnanje ce biti justify-content: ; */
+    justify-content: space-between;
+}
+.box1{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(195, 79, 7);
+    /* flex-grow: 1; */
+    /* flex-basis: 250px; */
+    /* flex-shrink: 3; */
+    align-self: start;
+}
+.box2{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(73, 255, 49);
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    /* flex-basis: 250px; */
+    align-self: center;
+}
+.box3{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 0, 191);
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    /* flex-basis: 250px; */
+    align-self: end;
+    
+}
+/* .box4{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(222, 255, 4); }*/
+    /* flex-grow: ;  pomocu ovog svostva zauzima se celokupna sirina 
+    parent kontejnera
+    definisanje sirine nekog child el. je zapravo predstavljalo
+    minimalnu sirinu tog elementa*/

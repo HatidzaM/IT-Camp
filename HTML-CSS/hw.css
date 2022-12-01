@@ -1,0 +1,38 @@
+.kartica{
+    /* height: 250px; */
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 10px;
+    border-bottom: solid rgba(133, 128, 128, 0.37) 2px;
+}
+
+.levideo{
+    width: 21%;
+    display: inline-block;
+    /* padding: 30px; */
+    padding-left: 10px;
+    position: relative;
+    /* padding-top: 5px; */
+    padding-bottom: 25px;
+    font-size: small;
+    /* background-color: rgba(255, 182, 193, 0.726); */
+    color: #3d3939d8
+    
+}
+
+.desnideo{
+    width: 71%;
+    display: inline-block;
+    padding: 5px;
+    padding-bottom: 25px;
+    display: inline-block;
+    /* background-color: rgba(135, 206, 250, 0.616); */
+}
+/* 
+.kartica{
+    /* height: 250px; */
+    /* margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 10px;
+    border-bottom: solid rgba(133, 128, 128, 0.37) 2px;
+} */ 

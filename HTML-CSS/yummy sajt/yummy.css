@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Varela+Round&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif ;
+    overflow-x: hidden;
+}
+
+.main{
+    /* overflow-x: none; */
+    width: 100%;
+    /* position: relative; */
+}
+
+/* .container{
+    position: absolute;
+} */
+.header{
+    /* margin: auto; */
+    position: sticky;
+    /* position: fixed; */
+    top: 0px;
+    z-index: 5;
+    border-bottom: solid #dfdfdf8e 1px;
+    background-color: white;
+    width: 100%;
+    height: 15%;
+    /* display: flex; */
+
+}
+
+#naslov{
+    color: black;
+    position: relative;
+    padding: 15px;
+    top: 29px;
+    left: 8%;
+    font-size: 1.8rem;
+    display: inline;
+
+}
+#tacka{
+    font-family: 'Varela Round', sans-serif;
+    color:#d70606;
+    position: relative;
+    top: -9px;
+    left: 226px;
+
+}
+li{
+    display: inline;
+    /* color: #191818e0; */
+    padding-right: 30px;
+    position: relative;
+    left: 26%;
+    top: -30px;
+}
+a{
+    font-weight: 550;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #19181883;
+}
+
+.dropdown{
+    /* width:25%; */
+    padding-right: 25px;
+    position: relative;
+    display: inline-block;
+    /* top: -30px; */
+    left: 24%;
+}
+.content{
+    display: none;
+    position: absolute;
+    top:0px;
+    background-color: white;
+    box-shadow: 0px 4px 10px 0px;
+    width: 100%;
+    z-index: 1;
+    left: 0px;
+    right:0;
+}
+.content a{
+    position:relative;
+    top:36px;
+    padding: 3px ;
+    text-decoration: none;
+    display: block;
+    left:0px;
+}
+.content a:hover{
+    background-color: gray;
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown a:hover{
+    color: black;
+}
+
+ul #button a{
+    border-radius: 30px;
+    background-color: #d70606;
+    color: white;
+    padding: 9px;
+    font-weight: 400;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 20px;
+}
+
+
+
+.home{
+    background-color: #dfdfdf8e;
+    height: 100vh;
+    width: 100%;
+}
+
+.right1{
+    width: 30%;
+}
+
+#izmenjeno{
+    font-family: 'Amatic SC', cursive;
+    font-size: 4rem;
+    color: #303030ea;
+    font-weight: 600;
+    position: relative;
+    left: 20%;
+    top: 100px;
+}
+p{
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 300;
+    color: #191818a1;    
+}
+.right1 p{
+    position: relative;
+    top: 115px;
+    left: 21%;
+}
+.dugme{
+    border-radius: 30px;
+    background-color: #d70606;
+    color: white;
+    width: 145px;
+    padding: 15px;
+    font-weight: 400;
+    padding-left: 26px;
+    padding-right: 26px;
+    position: absolute;
+    top: 477px;
+    left: 7%;
+    display: inline-block;
+}
+.zavideo{
+    font-weight: 550;
+    color: #1918189e;
+    position: absolute;
+    top: 492px;
+    left: 25%;
+}
+#i_video{
+    color: #d70606;
+    font-size: 2rem;
+    position: relative;
+    top: 167px;
+    left: 75%;
+    display: inline;
+}
+.left1 img{
+    position: absolute;
+    /* position: relative; */
+    top: 24%;
+    left: 750px;
+    width: 33%;
+    /* height: 40%; */
+}
+
+
+.about{
+    margin-top: 60px;
+    background-color: white;
+    width: 100%;
+    display: grid;
+}
+#aboutus{
+    color:#464646de;
+    font-size: 300;
+    text-align: center;
+    font-size: small;
+    font-weight: 200;
+}
+#lm{
+    font-family: 'Amatic SC', cursive;
+    color: #303030ea;
+    position: relative;
+    top: 5px;
+    left: 40%;
+    display: inline;
+    font-size: 3rem;
+    font-weight: 200;
+}
+#abizmena{
+    font-family: 'Amatic SC', cursive;
+    color: #d70606;
+    position: relative;
+    top: -55px;
+    left: 51.5%;
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+
+
+/* .slikaab{ */
+    /* background-image: url(https://images.unsplash.com/photo-1613274554329-70f997f5789f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80); */
+    /* background-repeat: no-repeat;
+    width: 50%;
+    height: 100vh; */
+    /* float: left; */
+    /* position: absolute;
+    left: 10%; */
+    /* top: 16px; */
+    /* left: 10%; */
+    /* display: flex; */
+/* } */
+.slikaab img{
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    /* width: 60%; */
+    /* height: 100vh; */
+    /* position: relative; */
+    /* justify-content: start; */
+    position: relative;
+    float: left;
+    display: inline;
+    width: 47%;
+    left: 8%;
+    /* height: 130vh; */
+    /* left: -330px; */
+    /* top: 300px; */
+    /* height: 100vh; */
+    /* float: left; */
+}
+.bookatableab{
+    background-color: white;
+    width: 50%;
+    height: 30px;
+    position: relative;
+    top: -190px;
+    left: 7%;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    z-index: 4;
+    /* justify-items: center; */
+}
+#usliciab{
+    color: black;
+}
+#broj{
+    color: #d70606;
+}
+
+.rightab{
+    /* height: 100vh; */
+    color: #1918189e;
+    width: 30%;
+    position: relative;
+    left: 60%;
+    top: -955px; 
+    /* font-style: italic; */
+    line-height: 1.7rem;
+    /* word-spacing: 1rem; */
+}
+#i{
+    font-style: italic;
+}
+#check1{
+    color: #d70606;
+    font-size: 1rem;
+    position: relative;
+    top: 28px;
+    /* left: 22%;
+    top: 243px; */
+}
+#check2{
+    color: #d70606;
+    font-size: 1rem;
+    position: relative;
+    top: 28px;
+    /* left: 22%;
+    top: 243px; */
+}
+#check3{
+    color: #d70606;
+    font-size: 1rem;
+    position: relative;
+    top: 28px;
+    /* left: 22%;
+    top: 243px; */
+}
+.uvucenoab p{
+    margin-left: 32px;
+}
+
+
+.slikaab2 img{
+    width: 100%;
+    position: relative;
+    top: 80px;
+    /* left: 5%; */
+    /* display: flex; */
+}
+#i_video2{
+    color: #db1212;
+    font-size: 4rem;
+    position: absolute;
+    z-index: 2;
+    top: -30px;
+    left: -80px;
+}
+.krugvideo{
+    /* background-color: #da0e0e; */
+    width: 100%;
+    position: relative;
+    top: -70px;
+    left: -20px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-sizing: 3px;
+    /* justify-content: center; */
+    /* top: 160px; */
+    left: 270px;
+}
+
+
+
+
+.box2{
+    background-color:#dfdfdf8e;
+    width: 100%;
+    display: grid;
+    position: relative;
+    top: -120vh;
+    height: 80vh;
+}
+.cards{
+    width: 100%;
+    height: 80vh;
+    top: -120vh;
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    /* justify-content: space-around; */
+    /* grid-template-columns: repeat(3,25%); */
+    grid-gap: 20px;
+    /* justify-items: center; */
+    /* align-content: center; */
+}
+
+.card{
+    margin-left: 8%;
+    padding: 25px;
+    text-align: left;
+    background-color: #d70606;
+    color: white;
+    width: 25%;
+    height: 400px;
+}
+.card h1{
+    width: 80%;
+}
+.card p{
+    position: relative;
+    top: -2px;
+    left: -2px;
+    margin-top: 25px;
+    color: white;
+    line-height: 24px;
+}
+.btnlm{
+    /* width: 40%; */
+    /* height: 25px; */
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 40%;
+    border-radius: 35px;
+    background-color: #ffffff54;
+    text-align: center;
+    position: relative;
+    bottom: -19px;
+    left: 26%;
+}
+
+.karte{
+    display: grid;
+    grid-template-columns: repeat(3,230px);
+    /* top: 15px; */
+    /* text-align: center; */
+    /* background-color: white; */
+    /* height: 100vh; */
+    width: 68%;
+    position: relative;
+    top: -390px;
+    left: 35.5%;
+    column-gap: 25px;
+
+    /* padding: 20px; */
+}
+.card1{
+    /* position: relative;  */
+    /* top: 10px; */
+    text-align: center;
+    background-color: white;
+    width: 230px;
+    height: 350px;
+    padding: 20px;
+    align-self: center;
+}
+.krug1{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    left: 65px;
+    background-color: #f4bfbfe9;
+}
+#note{
+    color: #d70606;
+    font-size: 2rem;
+    position: relative;
+    top: 15px;
+}
+.card2{
+    /* top: 10px; */
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    width: 230px;
+    height: 350px;
+}
+.krug2{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    left: 65px;
+    background-color: #f4bfbfe9;
+}
+#diamond{
+    color: #d70606;
+    font-size: 2rem;
+    position: relative;
+    top: 15px;
+}
+.card3{
+    /* top: 10px; */
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    width: 230px;
+    height: 350px;
+}
+.krug3{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    left: 65px;
+    background-color:  #f4bfbfe9;
+}
+#arhiva{
+    color: #d70606;
+    font-size: 2rem;
+    position: relative;
+    top: 15px;
+}
+
+.karte h2{
+    margin-top: 25%;  
+    font-weight: 300;  
+}
+
+
+
+.box3{
+    height: 100vh;
+    width: 100%;
+}
+
+.pozadinskasl{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    background-image: url(https://www.londonxlondon.com/wp-content/uploads/2022/02/brunch-shoreditch-1-720x405.jpg);
+}
+
+.providno{
+    width: 100%;
+    height: 200px;
+    background-color: #ffffff00;
+}
+.providno h1{
+    color: white;
+    font-weight: 300;
+    display: flex;
+}

@@ -1,0 +1,64 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+/* body{
+
+} */
+
+.main{
+    margin: 2rem auto;
+    width: 90%;
+    height: 100vh;
+    background-color: rgb(59, 150, 150);
+    position: relative;
+}
+
+.box1{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(30, 239, 30);
+    /* position: static; defoltna vrednost */
+    /* relative ostavlja rezervisan prostor na kom se nalazio(tu se nece automatski naci sledeci element) */
+    /* dobijamo mogucnost pomeranja elementa(sa svih strana)u odnodu na parent element */
+    position: relative;/*omugacava nam da pomeramo el. pomocu kodova ispod */ 
+
+    top: 0px;
+    left: 50%;
+}
+
+.box2{
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    /*position: absolute;
+    ne cuva prostor na kome se nalazio
+    parent el. mora imati positiom razlicit od static  */
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+
+.box3{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(9, 31, 195);
+    position: fixed;/*ne cuva prostor na kom se nalazio*/
+    top: 40px;
+}
+
+.box4{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(214, 6, 114);
+    position: sticky;
+    bottom: 10px;
+    right: 50px;
+    z-index: 2;
+}
+
+.box5{
+    width: 120px;
+    height: 120px;
+    background-color: yellow;
+}

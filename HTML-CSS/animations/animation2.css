@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.parent{
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-color: #f8c16f;
+    border-radius: 20%;
+}
+.child{
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+
+.parent:hover .child{
+    animation: top-to-bottom 3s ease-in-out forwards 3 alternate;
+    /*animation duration: 
+    animation timing function:
+    animation fill mode:
+    animamation iteration count:border: ;
+    animation direction: */
+}
+@keyframes top-to-bottom{
+    0%{
+        transform: translateY(0px);
+    }
+    33%{
+        transform: translateX(350px);
+    }
+    66%{
+        transform: translateX(350px) translateY(350px);
+    }
+    100%{
+        transform: translateY(350px);
+    }
+}
