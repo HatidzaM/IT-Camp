@@ -9,8 +9,8 @@ console.log(recenica2.length);
 
 //postoje 3 metode za (uzimanje) jednog kkaraktera nekog stringa:
 
-// 1. charAt(index) - vraca karakter nekog stringa sa poslatim indexom
-// 2. charCodeAt(index) - vraca kod nekog stringa sa poslatim indexom
+// 1. charAt(index) - vraca karakter nekog stringa sa poslatim indexom.
+// 2. charCodeAt(index) - vraca kod nekog stringa sa poslatim indexom.
 // 3. string[index] - ima jednu razliku od charAt()
 
 const novaRecenica = "Spava mi se."
