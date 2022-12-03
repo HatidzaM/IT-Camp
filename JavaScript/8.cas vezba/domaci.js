@@ -19,6 +19,26 @@ else if(duzinat >= 90 && duzinat <= 120 && sirinat >= 45 && sirinat <= 90 && ras
 else{console.log("niste uneli pravilne vrednosti")}
 
 
+//PRAVILNIJE!!!
+// const duzina = +prompt("Unesite duzinu terena: ");
+// const sirina = +prompt("Unesite sirinu terena: ");
+// const rastojanje = +prompt("Unesite rastojanje od ivice terena i ograde: ");
+// if (isNaN(duzina) || isNaN(sirina) || isNaN(rastojanje)) {
+//   console.log("Unete vrednosti moraju biti brojevi.");
+// } else if (duzina < 90 || duzina > 120) {
+//   console.log("Duzina terena mora biti izmedju 90m i 120m.");
+// } else if (sirina < 45 || sirina > 90) {
+//   console.log("Sirina terena mora biti izmedju 45m i 90m.");
+// } else if (rastojanje < 2 || rastojanje > 10) {
+//   console.log("Rastojanje terena mora biti izmedju 2m i 10m.");
+// } else {
+//   const obimTerena = 2 * duzina + 2 * sirina;
+//   const obimOgrade = obimTerena + 8 * rastojanje;
+//   console.log("Potrebno je " + obimOgrade + "m za ogradjivanje terena.");
+// }
+
+
+
 /*2. Korisnik unosi 2 broja : 
 Na osnovu toga koji je broj manji, iteracija se vrsi od njega do veceg broja.
 Izracunati aritmeticku sredinu brojeva koji su deljivi sa 5*/
