@@ -1,0 +1,1 @@
+//proveriti da li je uneti string polindrom(isti ako se cita odpozadi)
