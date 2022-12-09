@@ -1,4 +1,4 @@
-//1.
+//1.Prebrojati koliko ima malih slova u unetom stringu.
 function kolikoMalih(recenica){
     let brojac = 0;
     for(let i = 0; i< recenica.length; i++){
@@ -12,7 +12,7 @@ console.log(kolikoMalih("da li BROJI razmake, razmak se racuna kao malo slovo"))
 
 
 
-//2. ispisati da li u unetom stringu ima vise malih ili velikih slova. slova koja se koriste u stringu pripadaju eng.
+//2. ispisati da li u unetom stringu ima vise malih ili velikih slova. slova prpadaju eng.
 
 function kojihVise(recenica){
     let malibrojac = 0;
