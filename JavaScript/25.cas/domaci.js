@@ -55,14 +55,13 @@ console.log(bliziSto(-4, 220));
 // 33. Write a JavaScript program to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
 
 function inRange(a,b){
-    if( (a>=40 && a<=60) && (b>=40 && b<=60) ){
-        return `oba broja se nalaze 40-60`
-    }
-    else if( (a>=70 && a<=100) && (b>=70 && b<=100) ){
-        return `oba broja se nalaze 70-100`
+    if( 
+        ((a>=40 && a<=60) || (a>=70 && a<=100)) && 
+        ((b>=40 && b<=60) || (b>=70 && b<=100))){
+        return true;
     }
     else{
-        return `pih`
+        return false;
     }
 }
 console.log(inRange(45,57));
@@ -74,18 +73,15 @@ console.log(inRange(50,80));
 // 34. Write a JavaScript program to find the larger number from the two given positive integers, the two numbers are in the range 40..60 inclusive.
 
 function veci(br1,br2){
-    let max;
-    if((br1>=40 && br1<=60) && (br2>=40 && br2<=60)){
-        if(br1>br2){
-         max = br1;
+    if(br1<40 || br1>60 || br2<40 || br2>60){
+        return `niste poslali korektne brojeve`
         }
-        else if(br2>br1){
-         max = br2;
-        }
-    return `veci broj je ${max}`
+    else if(br1===br2){
+        return `brojevi su jednaki`
     }
     else{
-        return `nema`
+        const veciBr = br1 > br2 ? br1 : br2;
+        return `veci broj je ${veciBr}`
     }
 }
 console.log(veci(5,8));
