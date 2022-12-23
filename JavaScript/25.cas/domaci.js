@@ -1,5 +1,6 @@
 // 32. Write a JavaScript program to find a value which is nearest to 100 from two different given integer values.
 
+//MOJ NACIN , IMA MALO NEDOSTATAKA---------------------------
 function bliziSto(prvi, drugi){
      let brojac1 = 0;
      let brojac2 = 0;
@@ -50,6 +51,33 @@ console.log(bliziSto(101, 200));
 console.log(bliziSto(98, 150));
 console.log(bliziSto(-4, 220));
 
+
+//NACIN OD PROFESORA---------------------------------------------
+function bliziSto(par1, par2) {
+    let i;
+    let brojac1 = 0;
+    let brojac2 = 0;
+    if (par1 >= 100) {
+      for (i = par1; i >= 100; i--) {
+        brojac1++;
+      }
+    } else for (i = par1; i <= 100; i++) brojac1++;
+  
+    if (par2 >= 100) {
+      for (i = par2; i >= 100; i--) {
+        brojac2++;
+      }
+    } else for (i = par2; i <= 100; i++) brojac2++;
+  
+    if (brojac1 > brojac2) return "drugi je blizi";
+    else if (brojac2 > brojac1) return "prvi je blizi";
+    else return "isti su";
+  }
+  
+  console.log(bliziSto(-10, 40));
+  console.log(bliziSto(101, 200));
+  console.log(bliziSto(105, 90));
+  console.log(bliziSto(-100, -90));
 
 
 // 33. Write a JavaScript program to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
