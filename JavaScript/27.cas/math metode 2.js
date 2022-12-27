@@ -88,13 +88,33 @@ console.log(NZD(4, 9));
 // Write a JavaScript function to get the least common multiple (NZS) of two numbers.
 
 const NZS = (a,b) =>{
-    let nzs = 0;
-    for(let i = 1; i<Math.max(a,b); i++){
-        while(a%i===0 || b%i===0){
-            nzs=i*i
+    const veci = Math.max(a,b);
+    let i = veci;
+    let nzs;
+    while(true){
+        if(i%a===0 && i%b===0){
+            nzs=i;
+            break
         }
+        i++
     }
-    return nzs
-    // return `nzs od ${a} i ${b} je: ${nzs}`
+    return `nzs od ${a} i ${b} je: ${nzs}`
 }
-console.log(4,2);
+console.log(NZS(4,2));
+console.log(NZS(15,20));
+
+
+
+
+// const NZS = (a,b) =>{
+//     let nzs = 0;
+//     for(let i = 1; i<Math.max(a,b); i++){
+//         while(a%i===0 || b%i===0){
+//             nzs = i*(i+1)
+//         }
+//     }
+//     return `nzs od ${a} i ${b} je: ${nzs}`
+// }
+// console.log(NZS(4,2));
+// console.log(NZS(15,20));
+
