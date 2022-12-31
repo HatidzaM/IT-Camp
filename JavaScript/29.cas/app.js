@@ -39,4 +39,25 @@ console.log(nedelja.getDay());
 
 //Set metode:
 //dozvoljavaju menjanje nekih vrednosti koda Date objekta
+
+// setFullYear()
+trenutno.setFullYear(2015);
+console.log(trenutno);
+
+// setMonth()
+
+// setDate()
 trenutno.setDate(19);
+console.log(trenutno);
+
+// setHours()
+trenutno.setHours(10);
+console.log(trenutno.toTimeString());
+
+// setMinutes()
+
+// setSeconds()
+
+// setMiliseconds()
+
+// setTime()
