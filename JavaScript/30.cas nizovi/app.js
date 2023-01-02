@@ -36,14 +36,14 @@ console.log(auto instanceof Array);
 console.log(auto.length);
 
 //za dodavanje elementa na kraju niza - push()
-
-const dani = ["subota", "nedelja"];
-dani.push("petak");
-dani.push("ponedeljak", "utorak");
+const dani = ["ponedeljak", "utorak"];
+dani.push("sreda");
+dani.push("cetvrtak", "petak");
 console.log(dani);
 
 //bez push
-dani[dani.length-1] = "sreda";
+dani[dani.length-1] = "subota";
+console.log(dani);
 
 //za pretvaranje niza u string mozemo iskoristi 2 metode:
 //1. toString()
@@ -52,12 +52,12 @@ dani[dani.length-1] = "sreda";
 //1.
 const daniS = dani.toString();
 console.log(daniS);
-const nizz = daniS.split(",");
+const nizz = daniS.split("a");
 console.log(nizz);
 
 //2.  
 //classic primer:
-const daniS2 = dani.join();
+const daniS2 = dani.join("😺");
 console.log(daniS2);
 //dobijanje string i stavljanje nekog znaka izmedju elemenata niza kojji smo pretvorili u string  
 
@@ -65,9 +65,7 @@ console.log(daniS2);
 // dani.pop() vraca vrednost izbrisanog elementa
 const subota = dani.pop();
 console.log(dani);
-console.log(subota)
-
-
+console.log(subota);
 
 
 
