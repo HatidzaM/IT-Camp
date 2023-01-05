@@ -10,7 +10,7 @@ const niz = [ "jagoda", 25, true, "mandarina", [1, 2, 3], "ananas", 49, 694, "tr
 //     // console.log(typeof niz[i])
 //     if(String){
 //     // if(typeof niz[i] == String){
-//         stringBr+=i;
+//         stringBr++;
 //         console.log("stringova ima:" + stringBr)
 //     }
 //     else if(Number){
