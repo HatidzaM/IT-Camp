@@ -24,7 +24,7 @@ console.log(niz);
 
 // concat() metoda se koristi za spajanje nizova. concat() metoda pravi novi niz. S tim sto kao argument mozemo poslati i string, ne mora iskljucivo biti niz.
 
-const muskarci = ["alen", "leni", "macak"];
+const muskarci = ["alen", "leni"];
 const devojke = ["hatidza", "tidza", "zaba"];
 const grupa = muskarci.concat(devojke, "(^._.^)ﾉ");
 console.log(grupa);

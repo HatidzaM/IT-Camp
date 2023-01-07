@@ -67,9 +67,3 @@ const subota = dani.pop();
 console.log(dani);
 console.log(subota);
 
-
-
-
-
-
-// ja sam Alen Muslic 17 godina imam 
