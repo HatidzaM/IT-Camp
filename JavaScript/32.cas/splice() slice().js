@@ -15,25 +15,25 @@ const  niz = ["lala", "hatidz", "bela rada", "ljubicica", "pop kek", "cedevit"];
 // console.log(niz);
 
 
-//1.iz niza izbrisati sve biljke
-//2.iz niza izbrisati sve osim biljke
-//3.na petom elementu dodati "tarik", a na kraju niza dodati "omar"
+// 1.iz niza izbrisati sve biljke
+// 2.iz niza izbrisati sve osim biljke
+// 3.na petom elementu dodati "tarik", a na kraju niza dodati "omar"
 
-//1.
-// niz.splice(0, 1);
-// niz.splice(1, 2);
-// niz.splice(5, 1);
-// console.log(niz);
+// 1.
+niz.splice(0, 1);
+niz.splice(1, 2);
+niz.splice(5, 1);
+console.log(niz);
 
-//2.
-// niz.splice(1,1);
-// niz.splice(3,2);
-// console.log(niz);
+// 2.
+niz.splice(1,1);
+niz.splice(3,2);
+console.log(niz);
 
-//3.
-// niz.splice(4, 0, "tarik");
-// niz.splice(niz.length, 0, "omar");
-// console.log(niz);
+// 3.
+niz.splice(4, 0, "tarik");
+niz.splice(niz.length, 0, "omar");
+console.log(niz);
 
 
 //console.log(niz.splice(1, 2)); splice() nam vraca niz sa izbrisanim elementima
