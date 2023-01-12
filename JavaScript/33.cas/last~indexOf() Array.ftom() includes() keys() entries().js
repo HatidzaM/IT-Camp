@@ -14,7 +14,7 @@ const lastBakir = niz.lastIndexOf("bakir");
 console.log(lastBakir);
 
 //Array.from() nam vraca niz, koji se pravi od nekog objekta koji ima length
-const newniz = Array.from("svako slove ce biti posecan elemenat niza");
+const newniz = Array.from("svako slove ce biti poseban elemenat niza");
 console.log(newniz);
 
 // includes() metoda nam vraca boolean u zavisnosti od toga da li se argumenat nalazi u nizu
