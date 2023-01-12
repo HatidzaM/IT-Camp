@@ -28,7 +28,11 @@ for(let index of indeksi){
 }
 
 //entries() vraca Array Iterator Object sa key/value 
-
+const entries = niz.entries();
+console.log(entries);
+for (let pair of entries) {
+    console.log(pair);
+}
 
 
 // 1. Write a JavaScript function to get the first element of an array. Passing a parameter 'n' will return the first 'n' elements of the array.
