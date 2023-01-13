@@ -38,5 +38,3 @@ const niz4 = niz.map((student)=> student[0].toUpperCase() + student.slice(1));
 console.log(niz4);
 
 
-
-const brojevi = [-5, 3, 4, 5, -5];
