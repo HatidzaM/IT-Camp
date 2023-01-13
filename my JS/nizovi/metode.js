@@ -11,8 +11,10 @@
 //slice()  = vraca deo niza
 //indexOf()  = vraca trazenu poziciju
 //lastIndexOf()  = vraca poziciju zadnjeg pojavljivanja
-//Array.from()  = pravi niz
+//array.from()  = pravi niz
 //includes()  = vraca boolean
 //keys()  = vraca keys
 //entries()  = vraca key&value
 
+// forEach()
+// array.map()
