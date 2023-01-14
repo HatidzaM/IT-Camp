@@ -20,14 +20,13 @@ console.log(koreni);
 
 // 4. Napraviti novi niz koji ce sve negativne brojeve pomnoziti sa (-1), a pozitivne kvadrirati.
 const brojevi = [-5, 4, 3, 10, 14, -5];
-const novi = brojevi.map(
-    function(broj){
-        if(broj>=0){
-            return broj**2
-        }
-        else{
-            return broj*(-1)
-        }
+const kvadriraj = (broj) =>{
+    if(broj>=0){
+        return broj**2
     }
-);
+    else{
+        return -broj
+    }
+}
+const novi = brojevi.map(kvadriraj);
 console.log(novi);
