@@ -16,5 +16,5 @@
 //keys()  = vraca keys
 //entries()  = vraca key&value
 
-// forEach()
+// forEach(element, index, all)
 // array.map()
