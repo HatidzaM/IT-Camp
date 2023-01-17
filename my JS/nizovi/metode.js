@@ -18,3 +18,5 @@
 
 // forEach(element, index, all)
 // array.map()
+// filter()  = testira
+// reduce()  = vraca jednu vrednost
