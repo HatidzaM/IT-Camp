@@ -15,7 +15,6 @@
 //includes()  = vraca boolean
 //keys()  = vraca keys
 //entries()  = vraca key&value
-
 // forEach(element, index, all)
 // array.map()
 // filter()  = testira
