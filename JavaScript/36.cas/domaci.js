@@ -8,6 +8,12 @@
 // Sample array :
 const arr1 = [3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
 
+// for (i = 1; i < 4; i++) {
+//   for (j = i; j < 4; j++) {
+//     console.log(i, j);
+//   }
+// }
+
 let pojavljivanje = 1;
 var element;
 let brojac = 0;

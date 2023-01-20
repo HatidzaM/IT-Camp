@@ -37,3 +37,14 @@ console.log(maxpalindrom());
 
 
 //2.nacin
+// const maxPalindrom2 = () => {
+//   for (i = 999; i > 99; i--) {
+//     for (k = i; k > 99; k--) {
+//       if (isPalindrom(i * k)) {
+//         return i * k;
+//       }
+//     }
+//   }
+// };
+
+// console.log(maxPalindrom2());
