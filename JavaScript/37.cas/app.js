@@ -1,8 +1,9 @@
-//zbir elemenata fibonacijevog niza
-let niz=[1,1];
-let i =2;
+//fibonacijevom nizu cije vrednost ne prelaze 4 miliona pronaci sumu parnih elemenata
+
+let niz = [1,1];
+let i = 2;
 let zbir = 0;
-while(niz[i-2] + niz[i-1]<4000000){
+while(niz[i-2] + niz[i-1] <4000000){
     zbir = niz[i-2] + niz[i-1];
     niz.push(zbir);
     i++
@@ -38,13 +39,12 @@ console.log(maxpalindrom());
 
 //2.nacin
 // const maxPalindrom2 = () => {
-//   for (i = 999; i > 99; i--) {
-//     for (k = i; k > 99; k--) {
-//       if (isPalindrom(i * k)) {
-//         return i * k;
+//   for (i = 999; i > 99; i--){
+//     for (k = i; k > 99; k--){
+//       if (isPalindrom(i * k)){
+//         return i * k
 //       }
 //     }
 //   }
-// };
-
+// }
 // console.log(maxPalindrom2());
