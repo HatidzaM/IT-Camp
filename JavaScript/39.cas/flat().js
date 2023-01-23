@@ -1,11 +1,11 @@
 //flat() metoda se koristi kada unutar niza imamo element koji je niz, i zelimo da sve podelemente izvucemo na isti nacin da oni predstavljaju elemente glavnog niza
-
 const niz = [
-    ["jabuka", "jagoda", "ananas"],
-    ["","",""],
-    ["","",""]
-]
-
+    ["jabuka", "ananas", "jagoda", "kruska"],
+    ["krompir", "luk", "paradajz"],
+    ["pite", "razna jela"],
+];
+const niz2 = niz.flat();
+console.log(niz2);
 
 
 //1
