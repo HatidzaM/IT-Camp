@@ -5,7 +5,7 @@ const niz = [
     ["pite", "razna jela"],
 ];
 const niz2 = niz.flat();
-console.log(niz2);
+console.log(niz);
 
 
 //1
