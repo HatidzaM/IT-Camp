@@ -1,9 +1,9 @@
 // Napraviti objekat student koji ce da ima vrednosti (po zelji), svojstava:
-// ime, prezime, broj indeksa, ocene (niz svih ocena koje student ima u
-// trenutnoj godini), prosekOcena (funckija koja na osnovu ocene vraca prosek
-// datih ocena).
+//ime, prezime, broj indeksa, ocene (niz svih ocena koje student ima u trenutnoj godini), prosekOcena (funckija koja na osnovu ocene vraca prosek datih ocena).
 
-// Zad.
+
+
+// 2.
 // Write a JavaScript program which returns a subset of a string. Go to the editor
 // Sample Data: dog
 // Expected Output: ["d", "do", "dog", "o", "og", "g"]
