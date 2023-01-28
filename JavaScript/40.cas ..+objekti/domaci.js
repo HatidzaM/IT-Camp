@@ -24,9 +24,9 @@ const student ={
     broj_indeksa: 00213120,
     ocene: [10,10,9,10,9,10,10,10,9],
     prosek_ocena: function(){
-     const suma = student.ocene.reduce((a,b) =>a+b);
-     return +(suma / student.ocene.length).toFixed(2)
+     const suma = this.ocene.reduce((a,b) =>a+b);
+     return +(suma / this.ocene.length).toFixed(2)
     }
 }
-// console.log(student.prosek_ocena());
+console.log(student.prosek_ocena());
 
