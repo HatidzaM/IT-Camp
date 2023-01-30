@@ -6,7 +6,11 @@
 // 5. setNickName - metoda (svaka osoba ima nadimak sastavljen od prva dva slova
 // imena i prva dva slova prezimena)
 
-
+const objekat = {
+    firstName:"hatidza",
+    lastName:"mahmutovic",
+    language:"turski",
+}
 
 
 
@@ -26,8 +30,6 @@
 // vraca Dzenan Kosuta zivi u ulici Avnoja u Novom Pazaru.
 //          }
 //      }
-
-
 
 
 
