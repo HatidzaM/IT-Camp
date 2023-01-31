@@ -10,10 +10,16 @@
 const objekat = {
     firstName:"hatidza",
     lastName:"mahmutovic",
-    language:"turski",
-    setLanguage:function(){
-        prompt("set language:");
-        return prompt
+    language:["turski", "engleski"],
+    setLanguage:function(x){
+        for(let el of this.language){
+            if(el===x){
+                return "jezik je vec unet"
+            }
+            else{
+                return this.language.push(x)
+            }
+        }
     },
     setNickName: function(){
         let prvo = "";
@@ -28,7 +34,7 @@ const objekat = {
     }
 }
 console.log(objekat.setNickName());
-
+console.log(objekat.setLanguage("nemacki"));
 
 
 //2. Zadatak
@@ -36,7 +42,7 @@ const radnik = {
     firstName: "Dzenan",
     lastName : "Kosuta",
     fullname:function(){
-        return this.firstName + this.lastName
+        return this.firstName +" "+ this.lastName
     },
     adresa:{
         ulica:"avnoja",
@@ -44,8 +50,7 @@ const radnik = {
         grad:"Novi Pazar",
         getAdress:function(){
             // return `${fullname()} zivi u ulici ${radnik.adresa}`
-            return radnik.firstName + radnik.lastName + `zivi u ulici` + this.ulica + this.broj + this.grad 
-// vraca Dzenan Kosuta zivi u ulici Avnoja u Novom Pazaru.
+            return radnik.firstName +" "+ radnik.lastName + ` zivi u ulici ` + this.ulica+" "+ this.broj+" "+ this.grad 
         }
     }
 }
@@ -67,10 +72,11 @@ const automobil = {
         parking:"JKP Servis",
         vikend:"od 17 free",
         satnaKarta: "50",
-        dnevnaKarta: "200",
+        dnevnaKarta: "200", 
         mesecnaKarta: "2000",
         platiZa: function(od, do) {
 
 }
     }
 }
+console.log();
