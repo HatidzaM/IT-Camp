@@ -53,4 +53,40 @@ const bindFunction = poruka.bind(restoran1);
 console.log(bindFunction("novi sad", "srbija"));
 
 
+// Write a JavaScript function to retrieve all the values of an object's properties.
 
+const getValues = (obj) => {
+    const values = [];
+    for (let key in obj) {
+      values.push(obj[key]);
+    }
+    return values;
+  };
+  
+  const obj = {
+    marka: "Audi",
+    model: "A6",
+  };
+  
+  console.log(getValues(obj));
+  // for (let x in obj) {
+  //   console.log(x); kljucevi
+  // }
+  
+  // Domaci:
+  const automobil = {
+    marka: "Audi",
+    model: "Q7",
+    boja: "Bela",
+    pogon: "quattro",
+    menjac: "Automatik",
+    km: 240000,
+    vlasnik: ["062321552", "063930630"],
+    garaza: {
+      parking: "JKP Servis",
+      vikend: "od 17 free",
+      satnaKarta: 50,
+      dnevnaKarta: 200,
+      mesecnaKarta: 2000,
+    },
+  };
