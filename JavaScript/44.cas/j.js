@@ -103,6 +103,17 @@ const movies = [
     },
   ];
   
+const deoGrupe = grupa.filter((element)=>element.bojaOciju === "braon" && !element.polozenC)
+
+
+
+
+
+
+
+
+
+
   //  2. Zadatak
   //  The variable watchList holds an array of objects with information
   //  on several movies. Use reduce to find the average IMDB rating
