@@ -9,7 +9,7 @@ const person3 = {...person, firstname:"hamed"};
 console.log(person3);
 
 
-//1.
+//1. Iz 2 poslata niza vratiti 3. niz koji ce sadrzati one elemente iz oba niza koji nisu sadrzani u onom drugom nizu.
 const niz1 = [1,2,3,4,5,6,7,8];
 const niz2 = [2,4,5,6,8,10];
 
@@ -133,4 +133,21 @@ console.log(prolaz(products));
 
 
 
-// 
+// 38. Write a JavaScript function to move an array element from one position to another. Go to the editor
+
+// Test Data :
+// console.log(move([10, 20, 30, 40, 50], 0, 2));
+// [20, 30, 10, 40, 50]
+// console.log(move([10, 20, 30, 40, 50], -1, -2));
+// [10, 20, 30, 50, 40]
+
+// splice(arg1, arg2, arg3, arg4, ...)
+// splice(4,2)
+
+const move = (arr, pos1, pos2) => {
+  const element = arr[pos1];
+  arr.splice(pos1, 1);
+  arr.splice(pos2, 0, element);
+  return arr;
+};
+console.log(move([10, 20, 30, 40, 50], 0, 2));
