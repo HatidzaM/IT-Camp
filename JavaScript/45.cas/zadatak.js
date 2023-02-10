@@ -1,19 +1,20 @@
-const arr = [-3, 4.8, 5, 3, -3.2]
-const novi = arr.map((el)=>if(el));
+// Complete the code for the squareList function using any combination of map(), filter(), and reduce(). The function should return a new array containing the squares of only the positive integers (decimal numbers are not integers) when an array of real numbers is passed to it. An example of an array of real numbers is
+const numbers = [-3, 4.8, 5, 3, -3.2];
 
+const squaresPositiveIntegers = (arr) => {
+  const squares = arr
+    .filter((element) => element > 0 && element % 1 === 0)
+    .map((br) => br ** 2);
+  return squares;
+};
 
+// Da bi neki broj bio ceo, ostatak pri deljenju tog broja sa 1 mora biti 0.
+console.log(4.8 % 1);
+console.log(4 % 1);
+console.log(squaresPositiveIntegers(numbers));
 
-
-
-
-
-
-
-
-
-
-
-
+// Postoji built-in metoda u JavaScriptu koja proverava da li je neki broj Integer (ceo):
+// Number.isInteger()
 
 
 
@@ -53,11 +54,19 @@ const contacts = [
     },
 ];
 
-const lookUpProfile = function(name, prop){
-    this.name = name
-    this.prop = lastName || number || likes
-    contacts.map
-    if(name === firstName){
+const isNameAndProperty = (name, property, arr) => {
+  const element = arr.find((element) => {
+    const keys = Object.keys(element);
+    return element.firstName === name && keys.includes(property);
+  });
+  if (element) {
+    return element[property];
+  } else {
+    return `No such contact.`;
+  }
+};
+console.log(isNameAndProperty("Hamed", "hobby", contacts));
+console.log(isNameAndProperty("Sherlock", "likes", contacts));
+console.log(isNameAndProperty("Sherlock", "hobby", contacts));
 
-    }
-}
+
