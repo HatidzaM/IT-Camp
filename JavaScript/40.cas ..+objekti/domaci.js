@@ -22,7 +22,7 @@ const student ={
     ime: "hatidza",
     prezime: "mahmutovic",
     broj_indeksa: 00213120,
-    ocene: [10,10,9,10,9,10,10,10,9],
+    ocene: [4,5,3,2,4,3],
     prosek_ocena: function(){
      const suma = this.ocene.reduce((a,b) =>a+b);
      return +(suma / this.ocene.length).toFixed(2)
