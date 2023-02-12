@@ -1,0 +1,10 @@
+// hoisting predtavlja deklarisanje promenljivih pre same dodele vrednosti (u pozadini)
+// prilikom citanja koda se "izvlaci" deklaracija na vrhu
+
+
+// var a;*** mozemo izvrsiti naknadnu deklaraciju vec izvrsene promenljive 
+// (ali ne mora jer js to radi u pozadini prilikom citanja koda)
+
+// let a; !!!NE MOZE!!! kasnije definisanje 
+
+// const a; !!!NE MOZE!!! zato sto sa const moramo i da inicijaliziramo u isto vreme
