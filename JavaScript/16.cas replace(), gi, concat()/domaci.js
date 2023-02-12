@@ -8,8 +8,6 @@
 
 
 const funkcija = function(recenica){
-    recenica = +prompt("unesite neku recenicu:");
-
     let polaDuzine = recenica.lenght % 2 === 0
     ? recenica.lenght / 2
     : Math.ceil(recenica.lenght / 2);
@@ -17,18 +15,18 @@ const funkcija = function(recenica){
 
     const prva = recenica.toUpperCase();
     const druga = recenica.toLowerCase();
-    const prvaPol = recenica.slice(0,polaDuzine).toUpperCase();
+    const prvaPOl = recenica.slice(0,polaDuzine).toUpperCase();
     const drugaPol = recenica
     .substring(polaDuzine,recenica.lenght)
     .toLowerCase();
     const treca = prvaPOl.concat(drugaPol);
     const cetvrta = recenica.replace(/skola/gi, "fakultet");
     const peta = recenica.substr(0, 10);
-    const sesta = recenica.lenght(-10);
+    const sesta = recenica.slice(-10);
 
     return(
         prva.concat("\n", druga, "\n", treca, "\n", cetvrta, "\n", peta, "\n", sesta)
     );
 }
-console.log(funkcija())
+console.log(funkcija("dokle ce ova skola da ubija u pojam"));
 
