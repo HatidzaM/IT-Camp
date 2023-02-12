@@ -13,4 +13,4 @@ console.log(ja('oh'));
 //3
 const slj = () => { }
 const kvadrat = (br) => br**2
-console.log(kvadrat(2))
+console.log(kvadrat(2));
