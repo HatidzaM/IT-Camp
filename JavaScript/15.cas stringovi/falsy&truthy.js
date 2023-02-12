@@ -19,8 +19,7 @@ else{
 
 //napraviti funkciju gde se trazi unos od korisnika i vraca poruku da li je uneta vrednost thrty ili falsy vrednost
 
-function truty(){
-    const unos = prompt("unesite nesto:");
+function truty(unos){
     if(unos){
         return "uneta je thruthy vrednost";
     }
@@ -28,5 +27,5 @@ function truty(){
         return "uneta je falsy vrednost";
     }
 }
-console.log(truty())
+console.log(truty('false'));
 
