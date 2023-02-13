@@ -6,9 +6,9 @@
 // .replace(/ovo/g, 'sa ovim')    g = global        
 // .replace(/OvO/gi, 'sa ovim')   i = insensitive   
 
-// charAt(index) =                vraca karakter nekog stringa sa poslatim indexom. - ""
+// charAt(index) =                vraca karakter nekog stringa sa poslatim indexom. -""
 // charCodeAt(index) =            vraca kod nekog stringa sa poslatim indexom.
-// string[index] =                razlika od charAt() - undefined
+// string[index] =                razlika od charAt() -undefined
 
 //toUpperCase() 
 //toLowerCase()
