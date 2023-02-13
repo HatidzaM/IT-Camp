@@ -37,7 +37,26 @@ console.log(najveciBroj(-22, -33, -44));
 // console.log(blizi(5,88));
 
 
-function bliziSto(prvi, drugi) {}
+function bliziSto(prvi, drugi) {
+    let i;
+  let brojac1 = 0;
+  let brojac2 = 0;
+  if (prvi >= 100) {
+    for (i = prvi; i >= 100; i--) {
+      brojac1++;
+    }
+  } else for (i = prvi; i <= 100; i++) brojac1++;
+
+  if (drugi >= 100) {
+    for (i = drugi; i >= 100; i--) {
+      brojac2++;
+    }
+  } else for (i = drugi; i <= 100; i++) brojac2++;
+
+  if (brojac1 > brojac2) return "drugi je blizi";
+  else if (brojac2 > brojac1) return "prvi je blizi";
+  else return "isti su";
+}
 
 console.log(bliziSto(-10, 40));
 console.log(bliziSto(101, 200));
