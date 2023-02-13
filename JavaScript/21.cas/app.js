@@ -28,9 +28,13 @@ console.log(podString("recenica kojoj cemo uneti nekoliko karaktera.",7,6));
 //3. unosi se string A i znak Z. kreirati novi string B koji se dobija tako sto iz unetog stringa izbacuje svaka pojava znaka Z.
 //npr. za unet string "madagaskar" i znak "a", dobijamo rezultat "mdgskr"
 
-function izbacivanje(rec, znak){
-    // let znak = "";
-    const novi = rec.replace(/znak/g, "")
-    return novi
+function izbacivanje(A, Z){
+    let B = "";
+    for(let i =0; i<A.length; i++){
+        if(A[i] !== Z){
+            B += A[i]
+        }
+    }
+return B
 }
 console.log(izbacivanje("madagaskar","a"));

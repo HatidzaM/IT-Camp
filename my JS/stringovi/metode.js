@@ -23,3 +23,39 @@
 // match () =                    vraca niz.
 // includes() =                  vraca boolean  +2.start
 //startWith() & endsWith() =     vracaju boolean
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const funkcija = function(recenica){
+    let polaDuzine = recenica.lenght % 2 === 0
+    ? recenica.lenght / 2
+    : Math.ceil(recenica.lenght / 2);
+
+    const prva = recenica.toUpperCase();
+    const druga = recenica.toLowerCase();
+    const prvaPOl = recenica.slice(0,polaDuzine).toUpperCase();
+    const drugaPol = recenica.substring(polaDuzine,recenica.lenght).toLowerCase();
+    const treca = prvaPOl.concat(drugaPol);
+    const cetvrta = recenica.replace(/skola/gi, "fakultet");
+    const peta = recenica.substr(0, 10);
+    const sesta = recenica.slice(-10);
+
+    return(
+        prva.concat("\n", druga, "\n", treca, "\n", cetvrta, "\n", peta, "\n", sesta)
+    );
+}
+console.log(funkcija("dokle ce ova skola da ubija u pojam"));
