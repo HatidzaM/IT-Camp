@@ -10,8 +10,8 @@
 //Math.abs(number) -         vraca apsolutnu vrednost broja number
 
 //Math.sin(radians) -        vraca vrednost sinusa (izmedju -1 i 1). vrednost u radijanima
-console.log(Math.sin(Math.PI/2))
-console.log(Math.sin(0))
+// console.log(Math.sin(Math.PI/2))
+// console.log(Math.sin(0))
 //Math.cos(radians) -        vraca vrednost kosinusa (izmedju -1 i 1). vrednost u radijanima
 
 // Math.min() -              vraca najmanji broj od poslatih. Argumenata moze imati neograniceno.
