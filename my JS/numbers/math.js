@@ -1,0 +1,6 @@
+ Math.abs()
+ Math.ceil()
+ Math.floor()
+ Math.round()
+ Math.fround()
+ Math.trunc()
