@@ -43,21 +43,14 @@ console.log(nedelja.getDay());
 // setFullYear()
 trenutno.setFullYear(2015);
 console.log(trenutno);
-
 // setMonth()
-
 // setDate()
 trenutno.setDate(19);
 console.log(trenutno);
-
 // setHours()
 trenutno.setHours(10);
 console.log(trenutno.toTimeString());
-
 // setMinutes()
-
 // setSeconds()
-
 // setMiliseconds()
-
 // setTime()
