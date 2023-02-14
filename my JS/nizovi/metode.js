@@ -1,3 +1,6 @@
+//Array.isArray(niz)
+//niz instanceof Array
+
 //to string()  /  join()
 //push()  = dodaje na kraju
 //pop()  = vraca zadnji izbrisani
