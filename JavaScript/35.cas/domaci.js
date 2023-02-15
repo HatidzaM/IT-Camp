@@ -20,7 +20,7 @@ const DATA2 = ["a", "b", "c", "d", "e"];
 const task = (arr1, arr2) => {
 const pomocni = arr1.concat(arr2);
 const pomocni2 = [];
-for (let br of pomocni) {
+for (let br of pomocni){
     if (br % 2 === 0) {
         pomocni2.push(br);
     }

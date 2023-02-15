@@ -3,9 +3,7 @@
 
 
 const godine = [19, 17, 20, 17, 16, 15, 19, 20];
-const punoletni = godine.filter(function (element){
-    return element > 17
-});
+const punoletni = godine.filter((element)=>element > 17);
 console.log(punoletni);
 
 
