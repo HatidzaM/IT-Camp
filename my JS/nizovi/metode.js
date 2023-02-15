@@ -2,26 +2,33 @@
 //niz instanceof Array
 
 //to string()  /  join("...")
-//push()  =           dodaje na kraju
+//push(-)  =           dodaje na kraju
 //pop()  =            vraca zadnji izbrisani
 //shift()  =          vraca prvi izbrisani
 //delete  =           ostavlja rupe, pravi se undefined
-//unshift()  =        dodaje na pocetku
-//concat()  =         spajanje
+//unshift(-)  =        dodaje na pocetku
+//concat(-)  =         spajanje
 //sort()
 //reverse()
-// brojevi.sort((a,b) => a-b);  od najmanjeg
-// console.log(brojevi);
+brojevi.sort((a,b) => a-b);//od najmanjeg
+console.log(brojevi);
 
-//splice( -, -, -, ...)
-//slice()  =          vraca deo niza
-//indexOf()  =        vraca trazenu poziciju
-//lastIndexOf()  =    vraca poziciju zadnjeg pojavljivanja
-//array.from()  =     pravi niz
-//includes()  =       vraca boolean
-//keys()  =           vraca keys
-//entries()  =        vraca key&value
+//splice( start , brisanje , dodavanje , ...)
+//slice( start , end)  =      vraca deo niza
+//indexOf(el , start)  =      vraca trazenu poziciju  +start
+//lastIndexOf(el)  =          vraca poziciju zadnjeg pojavljivanja  - -1
+
+//array.from()  =             pretvara u niz
+//includes(el)  =               vraca boolean
+//keys()  =                   vraca keys
+//entries()  =                vraca key&value
+const entries = niz.entries();
+console.log(entries);
+for(let i of entries){
+    console.log(i)
+}
+
 // forEach(element, index, all)
 // array.map()
-// filter()  =        testira
-// reduce()  =        vraca jednu vrednost
+// filter()  =                testira
+// reduce()  =                vraca jednu vrednost
