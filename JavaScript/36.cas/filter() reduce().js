@@ -131,7 +131,6 @@ console.log(addition(array1, array2));
 // Sample array :
 const arr1 = [3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
 
-// 4. Write a JavaScript program which accept a string as input and swap the case of each character. For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'.
 let element;
 let brojPojavljivanja = 1;
 let brojac = 0;
@@ -148,3 +147,5 @@ for (let i = 0; i < arr1.length; i++) {
   brojac = 0;
 }
 console.log(`${element} se pojavljuje ${brojPojavljivanja} puta.`);
+
+// 4. Write a JavaScript program which accept a string as input and swap the case of each character. For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'.

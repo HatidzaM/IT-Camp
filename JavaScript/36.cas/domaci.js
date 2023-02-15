@@ -19,13 +19,7 @@ console.log(a3);
 
 // 3. Write a JavaScript program to find the most frequent item of an array.
 // Sample array :
-const arr1 = [3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
-
-// for (i = 1; i < 4; i++) {
-//   for (j = i; j < 4; j++) {
-//     console.log(i, j);
-//   }
-// }
+const arr1 = [3, "a", "a", "a", 2, 3, "a", 3, "a","a", 2, 4, 9, 3];
 
 let pojavljivanje = 1;
 var element;
@@ -36,7 +30,6 @@ for(let i=0; i<arr1.length; i++){
             brojac++;
             if(brojac>pojavljivanje){
                 element = arr1[i];
-                pojavljivanje = brojac;
             }
         }
         
@@ -61,4 +54,4 @@ const change = (str)=>{
     }
     return newStr
 }
-console.log(change(`The Quick Green Frog`));
+console.log(change(`The nela Green Frog`));
