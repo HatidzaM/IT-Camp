@@ -31,4 +31,4 @@ for(let i of entries){
 // forEach(element, index, all)
 // array.map()
 // filter()  =                testira
-// reduce()  =                vraca jednu vrednost
+// reduce(prev, curr)  =      vraca jednu vrednost
