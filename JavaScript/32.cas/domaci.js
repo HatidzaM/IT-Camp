@@ -58,14 +58,11 @@ console.log(maxx(brojevi));
 
 // vraca najmanji
 function najmanji(niz){
-    // const veciBr = a > b ? a : b;
-    //     return veciBr
     let min = niz[0];
-    for(let i=1; i<niz.length; i++){
+    for(let i=0; i<niz.length; i++){
         if(niz[i] < min){
             min = niz[i]
         }
-        // else{ continue }
     }
     return min
 }
