@@ -97,8 +97,6 @@ const products = [
   };
   console.log(zadatak(products));
 
-
-
   const prolaz = function(q){
     const novi = q.map((el)=>{
         if(el.quantity > 40){

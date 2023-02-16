@@ -8,11 +8,11 @@ obj.key = "..."   //dodavanje i menjanje
 
 const niz = Object.values(obj);   //konvertovanje objekta u niz
 delete
-object.keys(obj)          //vraca niz kljuceva
-object.entries(obj)       //vraca niz nizova: svaki podniz je niz od 2 elementa key,value
-object.freeze(obj)        //cini objekat nepromenljivim
-object.seal(obj)    //cini objekat promenljivim s tim sto nema mogucnost dodavanja/brisanja novih svojstava i metoda
-object.is(obj1, obj2)     //da li su isti  
+Object.keys(obj)          //vraca niz kljuceva
+Object.entries(obj)       //vraca niz nizova: svaki podniz je niz od 2 elementa key,value
+Object.freeze(obj)        //cini objekat nepromenljivim
+Object.seal(obj)    //cini objekat promenljivim s tim sto nema mogucnost dodavanja/brisanja novih svojstava i metoda
+Object.is(obj1, obj2)     //da li su isti  
 //ako su obj1 i obj2 definisani, a obj3=ob1  =>  obj1,obj2 = false   obj1,obj3 = true
 // ***objekti su referentni tipovi podataka a ne vrednosni = ne gleda vrednosti neko izjednacavanje
 (...obj)                  //spread operator (...) kloniramo niz ili objekat.
