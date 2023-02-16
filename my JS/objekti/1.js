@@ -1,3 +1,9 @@
+// objekti su mutable(promenljivi)
+
+//*objekat.key=...*     //moze naknadno da se menja i dodaje vrednost, odvojeno od bloka, samo treba da se locira 
+//const drugi = prvi;   //oba postaju jedno isto
+
+
 //pristupanje odredjenim vrednostima objekta mozemo izvrsiti na 2 nacina
 //jedan key:value par  zove se  PROPERTY (svojstvo)
 

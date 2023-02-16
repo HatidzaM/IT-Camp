@@ -37,7 +37,36 @@ console.log(objekat.setNickName());
 console.log(objekat.setLanguage("nemacki"));
 
 
-//2. Zadatak
+//DRUGI NACIN-----------------------------------------------------------------------------------
+const radnik1 = {
+    firstName: "Dzenan",
+    lastName: "Kosuta",
+    fullname: function () {
+      return `${this.firstName} ${this.lastName}`;
+    },
+    language: [],
+    setLanguage: function (lang) {
+        if (!this.language.includes(lang)) {
+            this.language.push(lang);
+        }
+    },
+    setNickName: function () {
+      let firstPart = this.firstName[0].toUpperCase() + this.firstName[1].toLowerCase();
+      let secondPart = this.lastName[0].toLowerCase() + this.lastName[1].toLowerCase();
+      return `${firstPart}${secondPart}`;
+    },
+};
+console.log(radnik1.language);
+radnik1.setLanguage("english");
+console.log(radnik1.language);
+radnik1.setLanguage("english");
+console.log(radnik1.language);
+console.log(radnik1.setNickName());
+
+
+
+
+// 2. Zadatak
 const radnik = {
     firstName: "Dzenan",
     lastName : "Kosuta",
@@ -60,23 +89,51 @@ console.log(radnik.adresa.getAdress());
 
 
 //3. Zadatak
+// const automobil = {
+//     marka: "Audi",
+//     model: "Q7",
+//     boja: "Bela",
+//     pogon: "quattro",
+//     menjac: "Automatik",
+//     km:240000,
+//     vlasnik:[062321552,063930630],
+//     garaza:{
+//         parking:"JKP Servis",
+//         vikend:"od 17 free",
+//         satnaKarta: "50",
+//         dnevnaKarta: "200", 
+//         mesecnaKarta: "2000",
+//         platiZa: function(od, do) {
+
+// }
+//     }
+// }
+// console.log();
+
+
 const automobil = {
     marka: "Audi",
     model: "Q7",
     boja: "Bela",
     pogon: "quattro",
     menjac: "Automatik",
-    km:240000,
-    vlasnik:[062321552,063930630],
-    garaza:{
-        parking:"JKP Servis",
-        vikend:"od 17 free",
-        satnaKarta: "50",
-        dnevnaKarta: "200", 
-        mesecnaKarta: "2000",
-        platiZa: function(od, do) {
+    km: 240000,
+    vlasnik: [062321552],
+    garaza: {
+      parking: "JKP Servis",
+      vikend: "od 17 free",
+      satnaKarta: "50",
+      dnevnaKarta: "200",
+      mesecnaKarta: "2000",
+      platiZa: function (from, to) {
+        const prvi = from.getTime();
+        const drugi = to.getTime();
+        const razlika = Math.abs(drugi - prvi);
+        // 1000*60*60*24
+        const brojDana = razlika / (1000 * 60 * 60 * 24);
+        return `Vasa karta ce kostati ${brojDana * this.dnevnaKarta}.`;
+    },
+     },
+};
 
-}
-    }
-}
-console.log();
+console.log(automobil.garaza.platiZa(new Date(2023, 0, 21), new Date(2023, 0, 26)));
