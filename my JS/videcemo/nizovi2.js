@@ -106,3 +106,31 @@ const products = [
       libraryID: 3245,
     },
   ];
+
+
+
+
+
+
+
+
+
+
+
+  const prolaz = function(q){
+    const novi = q.map((el)=>{
+        if(el.quantity > 40){
+            el.price *= 0.6
+            return el
+        }
+        if(el.quantity > 20){
+            el.price *= 0.8
+            return el
+        }
+        else{
+            return el
+        }
+    });
+    return novi
+}
+console.log(prolaz(products));

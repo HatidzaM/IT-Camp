@@ -15,6 +15,7 @@ object.seal(obj)    //cini objekat promenljivim s tim sto nema mogucnost dodavan
 object.is(obj1, obj2)     //da li su isti  
 //ako su obj1 i obj2 definisani, a obj3=ob1  =>  obj1,obj2 = false   obj1,obj3 = true
 // ***objekti su referentni tipovi podataka a ne vrednosni = ne gleda vrednosti neko izjednacavanje
+(...obj)                  //spread operator (...) kloniramo niz ili objekat.
 
 
 //pozivanjem neke funkcije za odredjeni objekat se moze izvrsiti pomocu funkcije:
@@ -28,4 +29,6 @@ functija.apply(obj, ['argumenti','...']);
 // 3. bind()   zahteva prethodno definisanje promenljive (funkcije) za odredjeni objekat pa onda pozivanje funkcije sa eventualnim argumentima
 const nova = functija.bind(obj);
 console.log(nova("argumenti"));
+
+
 

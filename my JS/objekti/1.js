@@ -25,3 +25,11 @@
 //DESTRUCTURING  = izvlaci traZene vrednosti
 firstname = person.firstname;
 const{firstname, age}=person;
+
+
+// Svi objekti u JS su povezani sa nekim Prototype Objektom. Tako da mozemo reci da svaki objekat ima Prototype.
+// Prototype je objekat koji sadrzi odredjena svojstva i metode.
+
+
+// Pravljenje objekta preko new keyword
+    const obj3 = new Object({})
