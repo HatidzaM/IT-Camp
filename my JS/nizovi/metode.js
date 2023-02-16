@@ -1,11 +1,11 @@
-//Array.isArray(niz)  da li je niz
+//Array.isArray(niz)   da li je niz
 //niz instanceof Array
 
 //to string()  /  join("...")
 //push(-)  =           dodaje na kraju
-//pop()  =            vraca zadnji izbrisani
-//shift()  =          vraca prvi izbrisani
-//delete  =           ostavlja rupe, pravi se undefined
+//pop()  =             vraca zadnji izbrisani
+//shift()  =           vraca prvi izbrisani
+//delete  =            ostavlja rupe, pravi se undefined
 //unshift(-)  =        dodaje na pocetku
 //concat(-)  =         spajanje
 //sort()
@@ -19,7 +19,8 @@ console.log(brojevi);
 //lastIndexOf(el)  =          vraca poziciju zadnjeg pojavljivanja  - -1
 
 //array.from()  =             pretvara u niz
-//includes(el)  =               vraca boolean
+//includes(el)  =             vraca boolean
+
 //keys()  =                   vraca keys
 //entries()  =                vraca key&value
 const entries = niz.entries();
@@ -30,10 +31,12 @@ for(let i of entries){
 
 // forEach(element, index, all)
 // array.map()
-// filter()  =                testira
+// filter()  =                testira, vraca niz elemenata koji ispunjavaju
 // reduce(prev, curr)  =      vraca jednu vrednost
 
 //every() =                   da li svi ispunjavaju uslov, vraca BOOLEAN
 //some() =                    da li neki ispunjava uslov, vraca BOOLEAN
 //find() =                    vraca vrednost prvog elementa koji je prosao test funkcije  - undefined
 //findIndex() =               vraca index prvog elementa koji je zadovoljio uslov  - -1
+
+//flat() = kada unutar niza imamo element koji je niz, i zelimo da sve podelemente izvucemo na isti nacin da oni predstavljaju elemente glavnog niza
