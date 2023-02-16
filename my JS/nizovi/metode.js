@@ -32,3 +32,8 @@ for(let i of entries){
 // array.map()
 // filter()  =                testira
 // reduce(prev, curr)  =      vraca jednu vrednost
+
+//every() =                   da li svi ispunjavaju uslov, vraca BOOLEAN
+//some() =                    da li neki ispunjava uslov, vraca BOOLEAN
+//find() =                    vraca vrednost prvog elementa koji je prosao test funkcije  - undefined
+//findIndex() =               vraca index prvog elementa koji je zadovoljio uslov  - -1
