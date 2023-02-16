@@ -17,7 +17,7 @@ function second(){
     const a=5
     const b=9
     function closure(c){
-        return a*c
+        return a*c+b
     }
     return closure(3)
 }
