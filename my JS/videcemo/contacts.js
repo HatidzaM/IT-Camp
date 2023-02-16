@@ -36,15 +36,15 @@ const contacts = [
     const objectWithName = contacts.find((contact) => contact.firstName === name);
     if (objectWithName !== undefined) {
       if (Object.keys(objectWithName).includes(prop)) {
-        return objectWithName[`${prop}`];
+        // return objectWithName[`${prop}`];
+        return object.entries(contacts)
       } else {
         return `No such property.`;
       }
-    } else {
-      return `No such contact.`;
     }
+    else return `No such contact.`
   }
   
   console.log(lookUpProfile("Akira", "likes"));
   console.log(lookUpProfile("Imran", "likes"));
-  console.log(lookUpProfile("Kristian", "hobbies"));
+  console.log(lookUpProfile("Kristian", "hobbies")); 

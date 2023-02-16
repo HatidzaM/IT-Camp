@@ -81,39 +81,21 @@ const products = [
     },
   ];
   
-  const discount = (arr) => {
-    const newArr = arr.map(function (product) {
-      if (product.quantity > 40) {
-        product.price = product.price * 0.6;
-        return product;
-      } else if (product.quantity > 20) {
-        product.price = product.price * 0.8;
-        return product;
+  const zadatak = (niz) => {
+    const novi = niz.map(function (proizvod) {
+      if (proizvod.quantity > 40) {
+        proizvod.price *= 0.6;
+        return proizvod;
+      } else if (proizvod.quantity > 20) {
+        proizvod.price *= 0.8;
+        return proizvod;
       } else {
-        return product;
+        return proizvod;
       }
     });
-    return newArr;
+    return novi;
   };
-  console.log(discount(products));
-  
-  var library = [
-    { author: "Bill Gates", title: "The Road Ahead", libraryID: 1254 },
-    { author: "Steve Jobs", title: "Walter Isaacson", libraryID: 4264 },
-    {
-      author: "Suzanne Collins",
-      title: "Mockingjay: The Final Book of The Hunger Games",
-      libraryID: 3245,
-    },
-  ];
-
-
-
-
-
-
-
-
+  console.log(zadatak(products));
 
 
 

@@ -77,25 +77,18 @@ const CART_DATA = [
   },
 ];
 
-const third = (cart) => {
-  const shippingCost = 320;
-  const numOfProducts = cart.length;
-  const newArr = cart.map((product) => {
+const putovanje = (karta) => {
+  const fiksni_trosak = 320;
+  const kolicina_karti = karta.length;
+  const novi = karta.map((el) => {
     return {
-      name: product.name,
-      totalPrice: product.price * product.amount,
-    };
+      name: el.name,
+      totalPrice: el.price * el.amount,
+    }
   });
-  //   const prices = newArr.map((product) => product.totalPrice);
-  //   const sum = prices.reduce(
-  //     (prevValue, currValue) => prevValue + currValue,
-  //     shippingCost
-  //   );
-  const sum = newArr.reduce(
-    (prevValue, currValue) => prevValue + currValue.totalPrice,
-    shippingCost
+  const sum = novi.reduce(
+    (prev, curr) => prev + curr.totalPrice,fiksni_trosak
   );
-  return `You got ${numOfProducts} in cart, shipping cost is ${shippingCost}, your total is ${sum}.`;
-};
-
-console.log(third(CART_DATA));
+  return `You got ${kolicina_karti} in karta, shipping cost is ${fiksni_trosak}, your total is ${sum}.`;
+}
+console.log(putovanje(CART_DATA));

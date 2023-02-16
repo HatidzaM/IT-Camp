@@ -7,8 +7,8 @@
 const DATA1 = [2, 26, 38, 75, 11, 29];
 const DATA2 = ["a", "b", "c", "d", "e"];
 
-const task = (arr1, arr2) => {
-const pomocni = arr1.concat(arr2);
+const task = (niz1, niz2) => {
+const pomocni = niz1.concat(niz2);
 const pomocni2 = [];
 for (let br of pomocni){
     if (br % 2 === 0) {
