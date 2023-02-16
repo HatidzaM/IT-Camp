@@ -8,3 +8,13 @@
 // let a; !!!NE MOZE!!! kasnije definisanje 
 
 // const a; !!!NE MOZE!!! zato sto sa const moramo i da inicijaliziramo u isto vreme
+
+add(10,15)//moze
+function add(a,b){
+    console.log(a+b)
+}
+
+hello("alene")//Ne moze 
+const hello = (par) =>{
+console.log(`hello ${par}`)
+}
