@@ -1,4 +1,5 @@
 // objekti su mutable(promenljivi)
+// objekti su referentni tipovi podataka a ne vrednosni 
 
 //*objekat.key=...*     //moze naknadno da se menja i dodaje vrednost, odvojeno od bloka, samo treba da se locira 
 //const drugi = prvi;   //oba postaju jedno isto
@@ -13,11 +14,14 @@
 
 
 
-
-
 //  THIS  je keyword koja ukazuje na neki objekat
 //nije promenljiva i ne mozemo promeniti vrednost this
 
 //this ukazuje na razlicit objekat u zavisnosti od toga gde se koristi
 //u nekom objektu this ukazuje na taj objekat
 //u global scope this ukazuje na global object
+
+
+//DESTRUCTURING  = izvlaci traZene vrednosti
+firstname = person.firstname;
+const{firstname, age}=person;
