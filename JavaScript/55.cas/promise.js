@@ -37,7 +37,7 @@ const niz = new Promise((resolve, reject)=>{
 //     .finally(()=>console.log("obecanje je zavrseno"))
 
 
-//chain efekat se postize tako sto vrednost koja treba biti koriscena u nareqdnoj callback funkciji then metode se mora naci u return prethodne callback funkcije, prethodne then metode
+//chain efekat se postize tako sto vrednost koja treba biti koriscena u narednoj callback funkciji then metode se mora naci u return prethodne callback funkcije, prethodne then metode
 niz
     .then((niz)=>{
         console.log(`dobili smo ${niz}`)
@@ -46,3 +46,39 @@ niz
     })
     .then((noviNiz)=>console.log(`filtriran niz je ${noviNiz}`))
     .catch((message)=>console.log(message))
+
+
+
+
+// Napraviti funkciju koja sadrzi Promise koji proverava da li poslati argument funkcije ima vise od 10 samoglasnika.
+// Ako argument ima vise od 10 samoglasnika neka se uspesno izvrsi obecanje sa porukom "String zadovoljava uslov";
+// ako argument ima manje od 11 samoglasnika neka se reject_a obecanje uz poruku "String ne zadovoljava uslov";
+// U svakom slucaju neka stoji poruka "Funkcija je uspesno izvrsena".
+
+function proveraStringa(text) {
+    const promis = new Promise((resolve, reject) => {
+        const stringg = text.toLowerCase();
+        let brojac = 0;
+        for (let i = 0; i < stringg.length; i++) {
+            if ( stringg[i] === "a" || stringg[i] === "e" || stringg[i] === "i" || stringg[i] === "o" || stringg[i] === "u") {
+                brojac++;
+            }
+        }
+        if (brojac > 10){
+        resolve("String zadovoljava uslov!");
+        }
+        else{
+        reject("String ne zadovoljava uslov!");
+        }
+    });
+
+    promis
+        .then((poruka) => {
+            console.log(poruka)})
+        .catch((poruka) => {
+            console.log(poruka)});
+    return "Proverili smo string!";
+}
+
+console.log(proveraStringa("oooaoaoaoaoaoaoaoaooaoaoa"));
+console.log(proveraStringa("neki str"));
