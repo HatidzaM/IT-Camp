@@ -14,7 +14,7 @@ header{
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 2.5rem;
 }
 
 .container {
@@ -41,5 +41,11 @@ li {
     width: 50%;
     height: 50px;
     margin: auto;
-    background-color: #d2691e;
+    background-color: #1e84d2;
+}
+
+.deletebtn {
+    width: 20px;
+    height: 20px;
+    background-color: red;
 }

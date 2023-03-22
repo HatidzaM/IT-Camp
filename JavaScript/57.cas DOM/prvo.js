@@ -133,3 +133,87 @@ newDiv.append(textForNewDiv);
 container.appendChild(newDiv);
 
 input2.setAttribute("placeholder", "Unesite vasu email adresu");
+console.log(input2.getAttribute("placeholder"));
+
+
+//NASTVAK
+
+//EVENTS
+
+let button = document.querySelector("button");
+// console.log(button);
+button.addEventListener("click", buttonClicked);
+
+function buttonClicked(event){
+    // console.log(event);
+    // console.log(event.target.className);
+    // console.log(event.target.classList);
+
+    // console.log(event.clientX);
+    // console.log(event.clientY);
+
+    // console.log(event.altKey);
+    // console.log(event.ctrlKey);
+    // console.log(event.shiftKey);
+
+    document.querySelector("button").style.backgroundColor = "red";
+    document.querySelector("button").style.color = "white";
+}
+
+// newDiv.addEventListener("dblclick", runEvent);
+// newDiv.addEventListener("mouseup", runEvent);
+// newDiv.addEventListener("mousedown", runEvent);
+// newDiv.addEventListener("mouseleave", runEvent);
+// newDiv.addEventListener("mouseenter", runEvent);
+// newDiv.addEventListener("mousemove", runEvent);
+
+//za input polja
+newDiv.addEventListener("keydown", runEvent);
+newDiv.addEventListener("keyup", runEvent);
+newDiv.addEventListener("keypress", runEvent);
+
+function runEvent(event){
+    console.log("Type of event:"+ event.type)
+}
+
+let inputs = document.querySelectorAll("input");
+let input = inputs[1];
+// console.log(input);
+
+// input.addEventListener("keypress", getValue);
+// input.addEventListener("input", getValue);
+// input.addEventListener("submit", getValue);
+
+
+// function getValue(e){
+//     let itemvalue=e.target.value;
+//     console.log(itemvalue)
+// }
+
+let form = document.querySelector("form");
+form.addEventListener("submit", getValues);
+
+function getValues(e){
+    e.preventDefault();
+    let inputs = document.querySelectorAll("input");
+    let itemName = inputs[1].value;
+    let email = inputs[2].value;
+    console.log(itemName);
+    console.log(email);
+
+    input[1].value = "";
+    input[2].value = "";
+}
+
+let deletebutton = document.createElement("button");
+const textDeleteButton = (document.createTextNode = "X");
+deletebutton.className = "deletebtn";
+deleteButton.style.cursor = "pointer";
+deletebutton.append(textDeleteButton);
+
+let lis = document.querySelectorAll("li");
+let li = lis[lis.length-1];
+li.style.display = "flex";
+li.style.justifyContent = "space-between"
+li.appendChild(deletebutton);
+console.log(deletebutton)
