@@ -201,14 +201,14 @@ function getValues(e){
     console.log(itemName);
     console.log(email);
 
-    input[1].value = "";
-    input[2].value = "";
+    input[1].value = "";////////
+    input[2].value = "";///////
 }
 
 let deletebutton = document.createElement("button");
 const textDeleteButton = (document.createTextNode = "X");
 deletebutton.className = "deletebtn";
-deleteButton.style.cursor = "pointer";
+deleteButton.style.cursor = "pointer";/////
 deletebutton.append(textDeleteButton);
 
 let lis = document.querySelectorAll("li");
