@@ -33,4 +33,4 @@ const select = document.querySelector(".options");
 console.log(select);
 const options = select.children;
 console.log(options);
-Array.from(options).forEach((option) => console.log(option.value))
+Array.from(options).forEach((option) => console.log(option.value));
