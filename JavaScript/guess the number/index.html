@@ -9,13 +9,18 @@
     <script src="./app.js" defer></script>
 </head>
 <body>
+    <section>
     <h1>GUESS THE NUMBER</h1>
-    <h2>pick a number between 1 and 20</h2>
+    <h2>pick a number between 1 - 20</h2>
+    <div class="secret">?</div>
+    </section>
     <form action="">
-        <input id="inpuBr" type="text"/>
+        <input id="inputBr" type="text"/>
         <button class="button" type="button">CHECK</button>
-        <p id="attepts">attempts:</p>
-        <p id="hscore">high score:</p>
+        <p>score:<span id="score">20</span></p>
+        <p>high score:<span id="highscore">0</span></p>
+        <p>attempts:<span id="attempts">10</span></p>
+        <div class="pomoc">help:</div>
     </form>
 </body>
 </html>
