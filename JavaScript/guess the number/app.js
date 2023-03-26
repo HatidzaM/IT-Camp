@@ -22,9 +22,10 @@ let attepmts = 20;
 let randomBr = Math.floor(Math.random() * 20) + 1;
     console.log(randomBr);
 
-
+    body.style.backgroundColor = "#d3b896";
 button.addEventListener("click" , function(){
     if(attepmts > 0){
+        body.style.backgroundColor = "#d3b896";
         attepmts--;
         attemptsEl.textContent = attepmts;
         let guess = Number(txtNumber.value);
@@ -32,7 +33,7 @@ button.addEventListener("click" , function(){
             secretNumEl.textContent = randomBr;
             highScore = score > highScore ? score : highScore;
             highscoreEl.textContent = highScore;
-            body.style.backrgroundColor = "#04a504";
+            body.style.backgroundColor = "#04a504";
             h1El.textContent = "WELL DONE!";
             h1El.style.color = "white";
             h1El.style.fontSize = "7rem";
@@ -41,12 +42,13 @@ button.addEventListener("click" , function(){
         }
         else if(guess !== randomBr){
             if(score > 0){
-                body.style.backgroundColor = "#d3b896";
-                setTimeout(()=>{body.style.backgroundColor="#ff0000";},300);
+                body.style.backgroundColor = "red";
+                setTimeout(()=>{body.style.backgroundColor="#d3b896";},300);
                 score--;
                 scoreEl.textContent = score;
-                let help = guess > randomBr ? "too high" : "too low";
+                let help = guess > randomBr ? " TOO HIGH" : "TOO LOW";
                 helpEl.textContent = help;
+                helpEl.style.fontSize = "3rem";
                 // help.style.fontWeight = 600;
             }
             else{
