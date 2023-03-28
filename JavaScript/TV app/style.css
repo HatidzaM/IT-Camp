@@ -5,5 +5,18 @@
 }
 
 header{
-    background-color: rgb(170, 92, 92);
+    background-color: rgb(56, 3, 141);
+    color: white;
+    padding: 25px;
+}
+
+.container{
+    display: grid;
+    height: auto;
+}
+.kartice{
+    background-color: aquamarine;
+    width: 200px;
+    height: 300px;
+    justify-content: space-around;
 }
