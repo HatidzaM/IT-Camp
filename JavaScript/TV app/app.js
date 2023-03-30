@@ -11,3 +11,12 @@ const getVideos = async () => {
 };
 
 getVideos();
+
+
+
+const playButton = document.getElementById("playButton");
+const myVideo = document.getElementsByTagName("video");
+
+playButton.onclick = function() {
+    myVideo.play();
+};
