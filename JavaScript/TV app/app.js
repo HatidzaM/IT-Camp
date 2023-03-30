@@ -20,3 +20,9 @@ const myVideo = document.getElementsByTagName("video");
 playButton.onclick = function() {
     myVideo.play();
 };
+
+//padStart(2, "0") treba 2 ako nema stavi 0
+
+// player = $bp()
+
+// behavior: smooth
