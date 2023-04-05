@@ -9,6 +9,7 @@ let highscoreEl = document.querySelector("#highscore");
 let helpEl = document.querySelector(".pomoc");
 let scoreEl = document.querySelector("#score");
 let h1El = document.querySelector("h1");
+let again = document.querySelector(".btnAgain")
 
 // let input = document.getElementById("inputBr");
 // let help = document.getElementsByClassName("pomoc");
@@ -68,6 +69,20 @@ button.addEventListener("click" , function(){
         h1El.style.fontSize = "7rem";
         document.all[11].style.display = "none";
     }
+
+
+again.addEventListener('click', function () {
+    score = 20;
+    randomBr = Math.trunc(Math.random() * 20) + 1;
+
+    scoreEl.textContent = score;
+    highscoreEl.textContent = highScore;
+    document.querySelector('body').style.backgroundColor = '#d3b896';
+});
+
+
+
+
 
         // if(input > randomBr){
         //     attepmts--;

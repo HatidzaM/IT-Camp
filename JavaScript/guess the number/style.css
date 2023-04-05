@@ -73,6 +73,15 @@ p, .pomoc{
     position: relative;
     top:3rem;
 }
+
+.btnAgain{
+    background: black;
+    font-size: 1.5rem;
+    position: relative;
+    margin-left: 7rem;
+    margin-top: 2rem;
+}
+
 /* .pomoc{
     margin-top: 20px;
     font-size: 2rem;
